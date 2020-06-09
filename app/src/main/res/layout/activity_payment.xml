@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PaymentActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_margin="10dp"
+           android:background="@drawable/whitebadge"
+           android:elevation="5dp"
+           android:gravity="center"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+
+           <ImageView
+               android:id="@+id/imagev"
+               android:layout_width="wrap_content"
+               android:layout_height="120dp"
+
+               android:layout_gravity="center"
+               android:layout_marginStart="8dp"
+
+               android:layout_marginEnd="8dp"
+
+               app:srcCompat="@drawable/pineapple" />
+
+       </LinearLayout>
+
+       <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/whitebadge"
+    android:orientation="vertical"
+    >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:layout_marginBottom="8dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Course"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/TVTrainTitle"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="0"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+           </LinearLayout>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:layout_marginBottom="8dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Location"
+                   android:textColor="@color/colorPrimary"
+
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/TVTrainLocation"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="0"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+           </LinearLayout>
+
+
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+
+
+           <LinearLayout
+               android:id="@+id/linearLayout6"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:textColor="@color/colorPrimary"
+                   android:text="Trining Fee"
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/TVTrainFee"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="0 "
+                   android:textColor="#000"
+                   android:textSize="22sp" />
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+           <LinearLayout
+               android:id="@+id/linearLayout3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:layout_marginBottom="8dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Discount %"
+                   android:textColor="@color/colorPrimary"
+
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/TVTraindis"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="0%"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+           </LinearLayout>
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+           <LinearLayout
+               android:id="@+id/linearLayout5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:orientation="horizontal"
+               android:weightSum="2">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="Total"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="15sp" />
+
+               <TextView
+                   android:id="@+id/TVTrainTotal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="0 "
+
+                   android:textColor="#000"
+                   android:textSize="22sp" />
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="#666" />
+
+</LinearLayout>
+
+       <Button
+           android:layout_marginTop="40dp"
+           android:textColor="#fff"
+           android:background="@drawable/yellowbadge"
+           android:layout_width="150dp"
+           android:text="Proceed"
+           android:id="@+id/proceedpay"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
